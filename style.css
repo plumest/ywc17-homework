@@ -2,3 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'TATSanaSuksa';
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.8;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.head-title {
+    color: red;
+    font-size: 24px;
+}
