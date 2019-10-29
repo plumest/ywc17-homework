@@ -90,3 +90,51 @@ body {
 .store {
     width: 168px;
 }
+
+.logo {
+    width: 102px;
+    transition: 0.2s linear;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.footer-white {
+    background: #FAFAFA;
+    padding: 30px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.footer-hero span {
+    color: #E6332A;
+}
+
+.footer-hero a {
+    color: #333333;
+}
+
+.footer-hero a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+
+.footer-brand {
+    width: 108px;
+}
+
+.footer-blue {
+    background: #213A8F;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-blue a {
+    color: #fff;
+}
+
+.footer-blue a:hover {
+    text-decoration: none;
+}
