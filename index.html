@@ -10,15 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Style sheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Mitr:400,500&display=swap&subset=thai" rel="stylesheet">
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- Axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="m-0 p-0">
         <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top headerbar">
             <img class="d-block d-sm-none navBrand" src="https://www.ชิมช้อปใช้.com/img/logo/footer.png" alt="ชิมช้อปใช้">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +31,9 @@
                 </ul>
             </div>
         </nav>
-        <div class="my-4 h-100 d-none d-sm-block">sa</div>
-        <div class="my-3 h-100 d-block d-sm-none">sa</div>
-        <div class="row m-0">
+        <div class="my-4 h-100 d-none d-sm-block">space</div>
+        <div class="my-3 h-100 d-block d-sm-none">space</div>
+        <div class="row m-0 p-0">
             <div class="col-4 cover-img-1"></div>
             <div class="col-4 cover-img-2">
                 <div class="row justify-content-center align-items-center h-100">
@@ -50,67 +48,68 @@
 
         <div class="container-fluid mt-4">
             <div class="row">
-                <div class="text-center col-12">ตั้งแต่วันที่</div>
-                <div v-html="duration" class="text-center header-title-1 col-12"></div>
+                <div class="text-center col-12 bold">ตั้งแต่วันที่</div>
+                <div v-html="duration" class="text-center header-title-1 bold col-12"></div>
                 <div class="col-12 text-center">
-                    <a v-bind:href="navbarItems[0].href" class="line">
+                    <a v-bind:href="navbarItems[0].href" class="text-center">
                         <button class="btn btn-blue">
                             ลงทะเบียน เฟส 2<br>ตั้งแต่วันที่ 24 ต.ค.62 วันละ 2 รอบ เวลา 6.00 และ 18.00 น.<br>(จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)
                         </button>
+                        <hr class="d-none d-md-block position-relative" style="bottom: 40px; z-index: -1">
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid mx-4 my-5">
-            <div class="header-title-2">มาตรการส่งเสริมการบริโภคในประเทศ “ชิมช้อปใช้”</div>
+            <div class="header-title-2 bold">มาตรการส่งเสริมการบริโภคในประเทศ “ชิมช้อปใช้”</div>
             <div v-html="detail" class="my-4"></div>
-            <div class="bold-body my-2">เงื่อนไขการเข้าร่วมมาตรการ</div>
+            <div class="bold-body bold my-2">เงื่อนไขการเข้าร่วมมาตรการ</div>
             <div v-html="condition"></div>
         </div>
 
         <section id="g-wallet">
             <div class="container-fluid mx-4 my-5">
                 <div class="row content">
-                    <div class="col-md-5 order-2 order-md-1">
-                        <div class="header-title-2">ค้นหารายชื่อร้านค้า</div>
+                    <div class="col-sm-12 col-md-5 order-2 order-md-1">
+                        <div class="header-title-2 bold">ค้นหารายชื่อร้านค้า</div>
                         <a v-bind:href="navbarItems[2].href">
-                            <button class="btn btn-blue-white">รายชื่อร้านค้าที่เข้าร่วมโครงการ<i class="fas fa-caret-right ml-3"></i></button>
+                            <button class="btn btn-white-blue bold">รายชื่อร้านค้าที่เข้าร่วมโครงการ<i class="fas fa-caret-right ml-1"></i></button>
                         </a>
                     </div>
-                    <img class="col-md-7 order-1 order-md-2" src="https://www.ชิมช้อปใช้.com/img/banner_store.png" alt="รายชื่อร้านค้า">
+                    <img class="col-sm-12 col-md-7 order-1 order-md-2" src="https://www.ชิมช้อปใช้.com/img/banner_store.png" alt="รายชื่อร้านค้า">
                 </div>
             </div>
     
             <div class="container-fluid mx-4 my-5">
                 <div class="row content">
-                    <div class="col-md-5 order-1 order-md-2">
-                        <div class="header-title-2">ขั้นตอนการเข้าใช้งานผ่านแอปฯ “เป๋าตัง”</div>
+                    <div class="col-12 col-md-5 order-2">
+                        <div class="header-title-2 bold">ขั้นตอนการเข้าใช้งานผ่านแอปฯ “เป๋าตัง”</div>
                         <a v-bind:href="navbarItems[2].href">
-                            <button class="btn btn-blue-white">รายชื่อร้านค้าที่เข้าร่วมโครงการ<i class="fas fa-caret-right ml-3"></i></button>
+                            <button class="btn btn-blue-white bold">ขั้นตอนทั้งหมด<i class="fas fa-caret-right ml-1"></i></button>
                         </a>
                     </div>
-                    <iframe class="col-md-7 order-2 order-md-1" height="auto" src="https://www.youtube.com/embed/ZkniwQLv_Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="col-sm-12 col-md-7 order-1" height="auto" src="https://www.youtube.com/embed/ZkniwQLv_Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
     
             <div class="container-fluid mx-4 my-5">
                 <div class="row content">
-                    <div class="col-md-5 order-2 order-md-1">
-                        <div class="header-title-2">การเติมเงินเข้า “เป๋าตัง” (G-Wallet)</div>
+                    <div class="col-sm-12 col-md-5 order-2 order-md-1">
+                        <div class="header-title-2 bold">การเติมเงินเข้า “เป๋าตัง” (G-Wallet)</div>
                         <a v-bind:href="navbarItems[2].href">
-                            <button class="btn btn-blue-white">รายชื่อร้านค้าที่เข้าร่วมโครงการ<i class="fas fa-caret-right ml-3"></i></button>
+                            <button class="btn btn-blue-white bold">ดูขั้นตอนทั้งหมด<i class="fas fa-caret-right ml-1"></i></button>
                         </a>
                     </div>
-                    <img class="col-md-7 order-1 order-md-2" src="https://www.ชิมช้อปใช้.com/img/banner_touup-GW.png" alt="ขั้นตอนการเติมเงินเข้า G-Wallet">
+                    <img class="col-sm-12 col-md-7 order-1 order-md-2" src="https://www.ชิมช้อปใช้.com/img/banner_touup-GW.png" alt="ขั้นตอนการเติมเงินเข้า G-Wallet">
                 </div>
             </div>
     
             <div class="container-fluid mx-4 my-5">
                 <div class="row content">
-                    <div class="col-md-5 order-1 order-md-2">
-                        <div class="header-title-2">ใช้จ่าย สะดวก ปลอดภัยผ่าน “เป๋าตัง” (G-Wallet)</div>
-                        <div class="bold-body">สิทธิต่อที่ 1 : รับเงินสนับสนุน 1,000 บาท<br>สิทธิต่อที่ 2 : รับเงินชดเชยคืน 15%-20% (สูงสุด 8,500 บาท)</div>
+                    <div class="col-sm-12 col-md-5 order-2">
+                        <div class="header-title-2 bold">ใช้จ่าย สะดวก ปลอดภัยผ่าน “เป๋าตัง” (G-Wallet)</div>
+                        <div class="end-content bold">สิทธิต่อที่ 1 : รับเงินสนับสนุน 1,000 บาท<br>สิทธิต่อที่ 2 : รับเงินชดเชยคืน 15%-20% (สูงสุด 8,500 บาท)</div>
                         <div class="mt-4">แบ่งเป็น</div>
                         <ol class="mb-3">
                             <li>15% สำหรับยอดใช้จ่ายสะสมไม่เกิน 30,000 บาท</li>
@@ -125,15 +124,15 @@
                             </a>
                         </div>
                     </div>
-                    <img class="col-md-7 order-2 order-md-1" src="https://www.ชิมช้อปใช้.com/img/download.png" alt="ใช้จ่ายผ่าน G-Wallet">
+                    <img class="col-sm-12 col-md-7 order-1" src="https://www.ชิมช้อปใช้.com/img/download.png" alt="ใช้จ่ายผ่าน G-Wallet">
                 </div>
             </div>
     
             <div class="container-fluid">
-                <div class="bold-body">
+                <div class="end-content bold">
                     ใช้แอปพลิเคชั่น “เป๋าตัง” ชำระค่าสินค้าและบริการ<br>ชำระค่าสินค้าและบริการได้เฉพาะกับร้านค้าที่ใช้แอปพลิเคชั่น “ถุงเงิน” เท่านั้น
                 </div>
-                <div class="bold-body-danger">ใช้สิทธิได้ตั้งแต่ 27 ก.ย. - 31 ธ.ค. 62</div>
+                <div class="end-content-danger bold">ใช้สิทธิได้ตั้งแต่ 27 ก.ย. - 31 ธ.ค. 62</div>
             </div>
         </section>
 
@@ -156,22 +155,22 @@
         <section id="brand-logo" class="my-5">
             <div class="container-fluid content">
                 <div class="row">
-                    <a href="https://www.mof.go.th/th/home" class="col-2">
+                    <a href="https://www.mof.go.th/th/home" class="col-4 col-sm-2">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/MOF.png" alt="กระทรวงการคลัง">
                     </a>
-                    <a href="http://www.fpo.go.th/main" class="col-2">
+                    <a href="http://www.fpo.go.th/main" class="col-4 col-sm-2">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/FPO.png" alt="สศค.">
                     </a>
-                    <a href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH" class="col-2">
+                    <a href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH" class="col-4 col-sm-2">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/CGD.png" alt="กรมบัญชีกลาง">
                     </a>
-                    <a href="https://www.newcb.ktb.co.th/" class="col-2">
+                    <a href="https://www.newcb.ktb.co.th/" class="col-4 col-sm-2">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/Krungthai.png" alt="ธนาคารกรุงไทย">
                     </a>
-                    <a href="https://www.mots.go.th/" class="col-2">
+                    <a href="https://www.mots.go.th/" class="col-4 col-sm-2">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/MOTS.png" alt="กระทรวงการท่องเที่ยวและกีฬา">
                     </a>
-                    <a href="https://landing.tourismthailand.org/" class="col-2">
+                    <a href="https://landing.tourismthailand.org/" class="col-4 col-sm-2">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/TAT.png" alt="ททท">
                     </a>
                 </div>
@@ -204,7 +203,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid footer-blue p-2">
+            <div class="container-fluid footer-blue bold p-2">
                 <div class="row justify-content-around">
 
                     <div class="col-sm-12 col-md-3 col-lg-3">Copyright © 2003-2019</div>
@@ -221,6 +220,7 @@
             </div>
         </section>
     </div>
+
     <script>
         let app = new Vue ({
             el: '#app',
