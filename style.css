@@ -22,6 +22,7 @@
 body {
     font-family: TATSanaChon, sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
     color: #333333;
     line-height: 1.8;
 }
@@ -173,95 +174,6 @@ body {
     background-color: #ffc107;
 }
 
-@media (max-width:575.98px) {
-    .btn-blue-white {
-        color: #213A8F;
-        background-color: #fff;
-        border: 4px solid #213A8F;
-        width: 94vw;
-        font-size: 16px;
-        padding: 6px 12px;
-    }
-}
-
-@media (max-width:575.98px) {
-    .btn-white-blue {
-        color: #213A8F;
-        background-color: #fff;
-        border: 4px solid #213A8F;
-        width: 94vw;
-        font-size: 16px;
-        padding: 6px 12px;
-    }
-}
-
-@media (min-width:767.98px) {
-    .btn-blue-white {
-        color: #213A8F;
-        background-color: #fff;
-        border: 4px solid #213A8F;
-        width: 176px;
-        font-size: 18px;
-        padding: 6px 12px;
-    }
-}
-
-@media (min-width:767.98px) {
-    .btn-white-blue {
-        color: #213A8F;
-        background-color: #fff;
-        border: 4px solid #213A8F;
-        width: 308px;
-        font-size: 18px;
-        padding: 6px 12px;
-    }
-}
-
-@media (max-width:991.98px) {
-    .btn-blue-white {
-        color: #213A8F;
-        background-color: #fff;
-        border: 4px solid #213A8F;
-        font-size: 18px;
-        width: 176px;
-        padding: 6px 12px;
-    }
-
-    .btn-white-blue {
-        color: #213A8F;
-        background-color: #fff;
-        border: 4px solid #213A8F;
-        width: 270px;
-        font-size: 18px;
-        padding: 6px 12px;
-    }
-}
-
-@media (min-width:991.98px) {
-    .btn-blue-white {
-        color: #213A8F;
-        background-color: #fff;
-        border: 4px solid #213A8F;
-        font-size: 16px;
-        width: 176px;
-        padding: 6px 12px;
-    }
-
-    .btn-white-blue {
-        color: #213A8F;
-        background-color: #fff;
-        border: 4px solid #213A8F;
-        width: 308px;
-        font-size: 18px;
-        padding: 6px 12px;
-    }
-}
-
-.btn-blue-white:hover {
-    color: #fff;
-    background-color: #213A8F;
-}
-
 .header-link {
     color: #333333;
     text-decoration: none;
@@ -349,4 +261,37 @@ body {
 
 .footer-blue a:hover {
     text-decoration: none;
+}
+
+#brand-logo {
+    margin: 100px 0;
+}
+
+#callcenter {
+    margin: 150px 0;
+}
+
+#callcenter img {
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    margin: 70px 0;
+}
+
+#register {
+    margin: 26px 0;
+}
+
+@media (min-width:767.98px) {
+    #cover {
+        padding: 77px 0 0;
+    }
+}
+
+@media (max-width:767.98px) {
+    #cover {
+        padding: 60px 0 0;
+    }
 }

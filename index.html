@@ -31,38 +31,41 @@
                 </ul>
             </div>
         </nav>
-        <div class="my-4 h-100 d-none d-sm-block">space</div>
-        <div class="my-3 h-100 d-block d-sm-none">space</div>
-        <div class="row m-0 p-0">
-            <div class="col-4 cover-img-1"></div>
-            <div class="col-4 cover-img-2">
-                <div class="row justify-content-center align-items-center h-100">
+
+        <div id="cover">
+            <div class="row m-0 p-0">
+                <div class="col-4 cover-img-1"></div>
+                <div class="col-4 cover-img-2">
+                    <div class="row justify-content-center align-items-center h-100">
+                        <div class="col-12 text-center">
+                            <img class="d-none d-md-block mx-auto cover-md" src="https://www.ชิมช้อปใช้.com/img/logo/banner.png" alt="ชิมช้อปใช้">
+                            <img class="d-block d-md-none mx-auto cover-sm" src="https://www.ชิมช้อปใช้.com/img/logo/banner.png" alt="ชิมช้อปใช้">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 cover-img-3"></div>
+            </div>
+        </div>
+
+        <div id="register">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="text-center col-12 bold">ตั้งแต่วันที่</div>
+                    <div v-html="duration" class="text-center header-title-1 bold col-12"></div>
                     <div class="col-12 text-center">
-                        <img class="d-none d-md-block mx-auto cover-md" src="https://www.ชิมช้อปใช้.com/img/logo/banner.png" alt="ชิมช้อปใช้">
-                        <img class="d-block d-md-none mx-auto cover-sm" src="https://www.ชิมช้อปใช้.com/img/logo/banner.png" alt="ชิมช้อปใช้">
+                        <a v-bind:href="navbarItems[0].href" class="text-center">
+                            <button class="btn btn-blue">
+                                ลงทะเบียน เฟส 2<br>ตั้งแต่วันที่ 24 ต.ค.62 วันละ 2 รอบ เวลา 6.00 และ 18.00 น.<br>(จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)
+                            </button>
+                            <hr class="d-none d-md-block position-relative" style="bottom: 40px; z-index: -1">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-4 cover-img-3"></div>
         </div>
 
-        <div class="container-fluid my-70">
-            <div class="row">
-                <div class="text-center col-12 bold">ตั้งแต่วันที่</div>
-                <div v-html="duration" class="text-center header-title-1 bold col-12"></div>
-                <div class="col-12 text-center">
-                    <a v-bind:href="navbarItems[0].href" class="text-center">
-                        <button class="btn btn-blue">
-                            ลงทะเบียน เฟส 2<br>ตั้งแต่วันที่ 24 ต.ค.62 วันละ 2 รอบ เวลา 6.00 และ 18.00 น.<br>(จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)
-                        </button>
-                        <hr class="d-none d-md-block position-relative" style="bottom: 40px; z-index: -1">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="">
-            <div class="container my-70">
+        <div id="content">
+            <div class="container">
                 <div class="header-title-2 bold">มาตรการส่งเสริมการบริโภค<br>ในประเทศ “ชิมช้อปใช้”</div>
                 <div v-html="detail" class="my-4"></div>
                 <div class="bold-body bold my-2">เงื่อนไขการเข้าร่วมมาตรการ</div>
@@ -71,116 +74,48 @@
 
         </div>
 
-        <div id="g-wallet">
-            <div class="container my-70">
-                <div class="row content">
-                    <div class="col-sm-12 col-md-5 order-2 order-md-1">
-                        <div class="header-title-2 bold">ค้นหารายชื่อร้านค้า</div>
-                        <a v-bind:href="navbarItems[2].href">
-                            <button class="btn btn-white-blue bold">รายชื่อร้านค้าที่เข้าร่วมโครงการ<i class="fas fa-caret-right ml-1"></i></button>
-                        </a>
-                    </div>
-                    <img class="col-sm-12 col-md-7 order-1 order-md-2" src="https://www.ชิมช้อปใช้.com/img/banner_store.png" alt="รายชื่อร้านค้า">
-                </div>
-            </div>
-    
-            <div class="container my-70">
-                <div class="row content">
-                    <div class="col-12 col-md-5 order-2">
-                        <div class="header-title-2 bold">ขั้นตอนการเข้าใช้งานผ่านแอปฯ “เป๋าตัง”</div>
-                        <a v-bind:href="navbarItems[2].href">
-                            <button class="btn btn-blue-white bold">ขั้นตอนทั้งหมด<i class="fas fa-caret-right ml-1"></i></button>
-                        </a>
-                    </div>
-                    <iframe class="col-sm-12 col-md-7 order-1" height="auto" src="https://www.youtube.com/embed/ZkniwQLv_Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-    
-            <div class="container my-70">
-                <div class="row content">
-                    <div class="col-sm-12 col-md-5 order-2 order-md-1">
-                        <div class="header-title-2 bold">การเติมเงินเข้า “เป๋าตัง” (G-Wallet)</div>
-                        <a v-bind:href="navbarItems[2].href">
-                            <button class="btn btn-blue-white bold">ดูขั้นตอนทั้งหมด<i class="fas fa-caret-right ml-1"></i></button>
-                        </a>
-                    </div>
-                    <img class="col-sm-12 col-md-7 order-1 order-md-2" src="https://www.ชิมช้อปใช้.com/img/banner_touup-GW.png" alt="ขั้นตอนการเติมเงินเข้า G-Wallet">
-                </div>
-            </div>
-    
-            <div class="container my-70">
-                <div class="row content">
-                    <div class="col-sm-12 col-md-5 order-2">
-                        <div class="header-title-2 bold">ใช้จ่าย สะดวก ปลอดภัยผ่าน “เป๋าตัง” (G-Wallet)</div>
-                        <div class="end-content bold">สิทธิต่อที่ 1 : รับเงินสนับสนุน 1,000 บาท<br>สิทธิต่อที่ 2 : รับเงินชดเชยคืน 15%-20% (สูงสุด 8,500 บาท)</div>
-                        <div class="mt-4">แบ่งเป็น</div>
-                        <ol class="mb-3">
-                            <li>15% สำหรับยอดใช้จ่ายสะสมไม่เกิน 30,000 บาท</li>
-                            <li>20% สำหรับยอดใช้จ่ายสะสมส่วน 30,000 ถึง 50,000 บาท</li>
-                        </ol>
-                        <div class="row">
-                            <a class="col-6" href="https://apps.apple.com/th/app/%E0%B9%80%E0%B8%9B-%E0%B8%B2%E0%B8%95-%E0%B8%87/id1324902182?l=th">
-                                <img class="store" src="https://www.ชิมช้อปใช้.com/img/AppStore.png" alt="เป๋าตังบน App Store">
-                            </a>
-                            <a class="col-6" href="https://play.google.com/store/apps/details?id=com.ktb.customer.qr">
-                                <img class="store" src="https://www.ชิมช้อปใช้.com/img/GooglePlay.png" alt="เป๋าตังบน Google Play">
-                            </a>
-                        </div>
-                    </div>
-                    <img class="col-sm-12 col-md-7 order-1" src="https://www.ชิมช้อปใช้.com/img/download.png" alt="ใช้จ่ายผ่าน G-Wallet">
-                </div>
-            </div>
-    
-            <div class="container">
-                <div class="end-content bold">
-                    ใช้แอปพลิเคชั่น “เป๋าตัง” ชำระค่าสินค้าและบริการ<br>ชำระค่าสินค้าและบริการได้เฉพาะกับร้านค้าที่ใช้แอปพลิเคชั่น “ถุงเงิน” เท่านั้น
-                </div>
-                <div class="end-content-danger bold">ใช้สิทธิได้ตั้งแต่ 27 ก.ย. - 31 ธ.ค. 62</div>
-            </div>
-        </div>
-
-        <section id="callcenter" class="my-5">
+        <section id="callcenter">
             <div class="container content">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <a href="tel:021111144"><img class="w-100" src="https://www.ชิมช้อปใช้.com/img/Banner_KTB_SQ.png" alt="KTB 021111144"></a>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                        <a href="tel:021111144"><img class="callcenter-logo" src="https://www.ชิมช้อปใช้.com/img/Banner_KTB_SQ.png" alt="KTB 021111144"></a>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <a href="tel:022706400p7"><img class="w-100" src="https://www.ชิมช้อปใช้.com/img/Banner_CGD_Sq.png" alt="CGD 022706400 กด 7"></a>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                        <a href="tel:022706400p7"><img class="callcenter-logo" src="https://www.ชิมช้อปใช้.com/img/Banner_CGD_Sq.png" alt="CGD 022706400 กด 7"></a>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <a href="tel:1672"><img class="w-100" src="https://www.ชิมช้อปใช้.com/img/Banner_TAT_Hotline_Sq.png" alt="Tourist 1672"></a>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                        <a href="tel:1672"><img class="callcenter-logo" src="https://www.ชิมช้อปใช้.com/img/Banner_TAT_Hotline_Sq.png" alt="Tourist 1672"></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="brand-logo" class="my-5">
+        <section id="brand-logo">
             <div class="container content">
                 <div class="row">
-                    <a href="https://www.mof.go.th/th/home" class="col-4 col-sm-2">
+                    <a href="https://www.mof.go.th/th/home" class="col-4 col-sm-2 text-center">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/MOF.png" alt="กระทรวงการคลัง">
                     </a>
-                    <a href="http://www.fpo.go.th/main" class="col-4 col-sm-2">
+                    <a href="http://www.fpo.go.th/main" class="col-4 col-sm-2 text-center">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/FPO.png" alt="สศค.">
                     </a>
-                    <a href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH" class="col-4 col-sm-2">
+                    <a href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH" class="col-4 col-sm-2 text-center">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/CGD.png" alt="กรมบัญชีกลาง">
                     </a>
-                    <a href="https://www.newcb.ktb.co.th/" class="col-4 col-sm-2">
+                    <a href="https://www.newcb.ktb.co.th/" class="col-4 col-sm-2 text-center">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/Krungthai.png" alt="ธนาคารกรุงไทย">
                     </a>
-                    <a href="https://www.mots.go.th/" class="col-4 col-sm-2">
+                    <a href="https://www.mots.go.th/" class="col-4 col-sm-2 text-center">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/MOTS.png" alt="กระทรวงการท่องเที่ยวและกีฬา">
                     </a>
-                    <a href="https://landing.tourismthailand.org/" class="col-4 col-sm-2">
+                    <a href="https://landing.tourismthailand.org/" class="col-4 col-sm-2 text-center">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/TAT.png" alt="ททท">
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="footer" class="mt-5">
+        <section id="footer">
             <div class="footer-white mb-0">
                 <div class="container">
                     <div class="row">
