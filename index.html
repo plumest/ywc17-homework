@@ -46,7 +46,7 @@
             <div class="col-4 cover-img-3"></div>
         </div>
 
-        <div class="container-fluid mt-4">
+        <div class="container-fluid my-70">
             <div class="row">
                 <div class="text-center col-12 bold">ตั้งแต่วันที่</div>
                 <div v-html="duration" class="text-center header-title-1 bold col-12"></div>
@@ -61,15 +61,18 @@
             </div>
         </div>
 
-        <div class="container-fluid mx-4 my-5">
-            <div class="header-title-2 bold">มาตรการส่งเสริมการบริโภคในประเทศ “ชิมช้อปใช้”</div>
-            <div v-html="detail" class="my-4"></div>
-            <div class="bold-body bold my-2">เงื่อนไขการเข้าร่วมมาตรการ</div>
-            <div v-html="condition"></div>
+        <div class="">
+            <div class="container my-70">
+                <div class="header-title-2 bold">มาตรการส่งเสริมการบริโภค<br>ในประเทศ “ชิมช้อปใช้”</div>
+                <div v-html="detail" class="my-4"></div>
+                <div class="bold-body bold my-2">เงื่อนไขการเข้าร่วมมาตรการ</div>
+                <div v-html="condition"></div>
+            </div>
+
         </div>
 
-        <section id="g-wallet">
-            <div class="container-fluid mx-4 my-5">
+        <div id="g-wallet">
+            <div class="container my-70">
                 <div class="row content">
                     <div class="col-sm-12 col-md-5 order-2 order-md-1">
                         <div class="header-title-2 bold">ค้นหารายชื่อร้านค้า</div>
@@ -81,7 +84,7 @@
                 </div>
             </div>
     
-            <div class="container-fluid mx-4 my-5">
+            <div class="container my-70">
                 <div class="row content">
                     <div class="col-12 col-md-5 order-2">
                         <div class="header-title-2 bold">ขั้นตอนการเข้าใช้งานผ่านแอปฯ “เป๋าตัง”</div>
@@ -93,7 +96,7 @@
                 </div>
             </div>
     
-            <div class="container-fluid mx-4 my-5">
+            <div class="container my-70">
                 <div class="row content">
                     <div class="col-sm-12 col-md-5 order-2 order-md-1">
                         <div class="header-title-2 bold">การเติมเงินเข้า “เป๋าตัง” (G-Wallet)</div>
@@ -105,7 +108,7 @@
                 </div>
             </div>
     
-            <div class="container-fluid mx-4 my-5">
+            <div class="container my-70">
                 <div class="row content">
                     <div class="col-sm-12 col-md-5 order-2">
                         <div class="header-title-2 bold">ใช้จ่าย สะดวก ปลอดภัยผ่าน “เป๋าตัง” (G-Wallet)</div>
@@ -128,16 +131,16 @@
                 </div>
             </div>
     
-            <div class="container-fluid">
+            <div class="container">
                 <div class="end-content bold">
                     ใช้แอปพลิเคชั่น “เป๋าตัง” ชำระค่าสินค้าและบริการ<br>ชำระค่าสินค้าและบริการได้เฉพาะกับร้านค้าที่ใช้แอปพลิเคชั่น “ถุงเงิน” เท่านั้น
                 </div>
                 <div class="end-content-danger bold">ใช้สิทธิได้ตั้งแต่ 27 ก.ย. - 31 ธ.ค. 62</div>
             </div>
-        </section>
+        </div>
 
         <section id="callcenter" class="my-5">
-            <div class="container-fluid content">
+            <div class="container content">
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <a href="tel:021111144"><img class="w-100" src="https://www.ชิมช้อปใช้.com/img/Banner_KTB_SQ.png" alt="KTB 021111144"></a>
@@ -153,7 +156,7 @@
         </section>
 
         <section id="brand-logo" class="my-5">
-            <div class="container-fluid content">
+            <div class="container content">
                 <div class="row">
                     <a href="https://www.mof.go.th/th/home" class="col-4 col-sm-2">
                         <img class="logo" src="https://www.ชิมช้อปใช้.com/img/brand-logo/MOF.png" alt="กระทรวงการคลัง">
@@ -179,41 +182,45 @@
 
         <section id="footer" class="mt-5">
             <div class="footer-white mb-0">
-                <div class="row">
-                    <div class="col-sm-12 col-md-3">
-                        <img class="footer-brand" src="https://www.ชิมช้อปใช้.com/img/logo/footer.png" alt="ชิมช้อปใช้">
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-4 col-xs-12 footer-hero">
-                        <span class="red">ข้อมูลลงทะเบียนประชาชน</span><br>
-                        การรับสิทธิ การใช้งานแอปพลิเคชั่น “เป๋าตัง” และ “ถุงเงิน”<br>
-                        ติดต่อ ชิมช้อปใช้ Call Center by Krungthai โทร.<a href="tel:021111144">0 2111 1144</a>
-                    </div>
-                    
-                    <div class="col-md-3 col-sm-4 col-xs-12 footer-hero">
-                        <span class="red">ข้อมูลลงทะเบียนผู้ประกอบการ</span><br>
-                        เงื่อนไขและวิธีการเข้าร่วมมาตรการฯ<br>
-                        ติดต่อ โทร. <a href="022706400p7">0 2270 6400 กด 7</a>
-                    </div>
-                    <div class="col-md-3 col-sm-4 col-xs-12 footer-hero">
-                        <span class="red">ข้อมูลเที่ยวชิมช้อปใช้</span><br>
-                        ติดต่อ ททท.<br>
-                        โทร<a href="tel:1672">1672</a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3">
+                            <img class="footer-brand" src="https://www.ชิมช้อปใช้.com/img/logo/footer.png" alt="ชิมช้อปใช้">
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-4 col-xs-12 footer-hero">
+                            <span class="red">ข้อมูลลงทะเบียนประชาชน</span><br>
+                            การรับสิทธิ การใช้งานแอปพลิเคชั่น “เป๋าตัง” และ “ถุงเงิน”<br>
+                            ติดต่อ ชิมช้อปใช้ Call Center by Krungthai โทร.<a href="tel:021111144">0 2111 1144</a>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-4 col-xs-12 footer-hero">
+                            <span class="red">ข้อมูลลงทะเบียนผู้ประกอบการ</span><br>
+                            เงื่อนไขและวิธีการเข้าร่วมมาตรการฯ<br>
+                            ติดต่อ โทร. <a href="022706400p7">0 2270 6400 กด 7</a>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-12 footer-hero">
+                            <span class="red">ข้อมูลเที่ยวชิมช้อปใช้</span><br>
+                            ติดต่อ ททท.<br>
+                            โทร<a href="tel:1672">1672</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="container-fluid footer-blue bold p-2">
-                <div class="row justify-content-around">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3 col-lg-3">Copyright © 2003-2019</div>
+                        
+                        <div class="col-sm-12 col-md-9 col-lg-9">
+                            <ul class="nav row justify-content-between">
+                                <li class="nav-item col-sm-4 col-md-4 col-lg-4" v-for="item in footerItems">
+                                    <a class="footer-link" v-bind:href="item.href">{{ item.label }}</span></a>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div class="col-sm-12 col-md-3 col-lg-3">Copyright © 2003-2019</div>
-                    
-                    <div class="col-sm-12 col-md-9 col-lg-9">
-                        <ul class="nav row justify-content-between">
-                            <li class="nav-item col-sm-4 col-md-4 col-lg-4" v-for="item in footerItems">
-                                <a class="footer-link" v-bind:href="item.href">{{ item.label }}</span></a>
-                            </li>
-                        </ul>
                     </div>
 
                 </div>
