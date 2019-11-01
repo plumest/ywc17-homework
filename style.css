@@ -361,6 +361,13 @@ body {
 #hamburger:active {
     outline: none;
     border: none;
+    box-shadow: 0;
+}
+
+#hamburger:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0;
 }
 
 .hamburger-animation span {
