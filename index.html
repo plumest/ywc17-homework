@@ -19,11 +19,11 @@
     <div id="app" class="m-0 p-0">
         <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top headerbar">
             <img class="d-block d-sm-none navBrand" src="https://www.ชิมช้อปใช้.com/img/logo/footer.png" alt="ชิมช้อปใช้">
-            <button id="hamburger" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="hamburger" class="navbar-toggler collapsed" v-on:click="isActive = !isActive" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger-animation">
-                    <span class="hamburger-icon"></span>
-                    <span class="hamburger-icon"></span>
-                    <span class="hamburger-icon"></span>
+                    <span class="hamburger-icon" v-bind:class="{ hamburgerActive1: isActive }"></span>
+                    <span class="hamburger-icon" v-bind:class="{ hamburgerActive2: isActive }"></span>
+                    <span class="hamburger-icon" v-bind:class="{ hamburgerActive3: isActive }"></span>
                 </div>
             </button>
             
@@ -178,7 +178,8 @@
                     condition: String,
                     footerItems: [{label:'ลงทะเบียนเข้าร่วมมาตรการ', href: ''}, 
                                 {label:'ขั้นตอนการเข้าร่วมทั้งหมด', href: ''}, 
-                                {label:'รายชื่อร้านค้าที่เข้่าร่วมรายการ', href: ''}]
+                                {label:'รายชื่อร้านค้าที่เข้่าร่วมรายการ', href: ''}],
+                    isActive: false
                 }
             },
             mounted () {
