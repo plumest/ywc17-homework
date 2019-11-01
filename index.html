@@ -183,6 +183,13 @@
                     isActive: false,
                 }
             },
+            methods: {
+                getHref: function (navbarItems) {
+                    for(i=0; i<navbarItems.length; i++) {
+                        this.footerItems[i].href = navbarItems[i].href;
+                    }
+                }
+            },
             mounted () {
                 axios
                     .get('https://panjs.com/ywc.json')
@@ -191,12 +198,11 @@
                         this.duration = response.data.duration;
                         this.detail = response.data.detail;
                         this.condition = response.data.condition;
+                        this.getHref(this.navbarItems);
                     })
                     .catch(error => console.log(error))
                 
-                for(i=0; i<this.navbarItems.length; i++) {
-                    this.footerItems[i].href = this.navbarItems[i].href;
-                }
+                
             }
         });
     </script>
